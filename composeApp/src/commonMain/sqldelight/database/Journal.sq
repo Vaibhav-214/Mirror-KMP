@@ -1,0 +1,36 @@
+CREATE TABLE journals (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL ,
+    content_type TEXT NOT NULL,
+    text_content TEXT NOT NULL,
+    image_url TEXT,
+    audio_url TEXT,
+    tags TEXT,
+    created_at INTEGER NOT NULL
+);
+
+getAllJournals:
+SELECT *
+FROM journals;
+
+getJournalById:
+SELECT *
+FROM journals
+WHERE id = ?;
+
+insertJournal:
+INSERT OR REPLACE
+INTO journals(
+    id,
+    title,
+    content_type,
+    text_content,
+    image_url,
+    audio_url,
+    tags,
+    created_at
+) VALUES (?,?,?,?,?,?,?,?);
+
+deleteJournalById:
+DELETE FROM journals
+WHERE id = ?;

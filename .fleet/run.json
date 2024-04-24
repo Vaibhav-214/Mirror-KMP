@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "xcode-app",
+            "name": "Xcode-app configuration",
+            "buildTarget": {
+                "project": "iosApp",
+                "target": "iosApp",
+            },
+            "configuration": "Debug",
+            "destination": "iPhone 15 Pro Max | iOS 17.2",
+        },
+        {
+            "type": "android-app",
+            "name": "Android-app configuration",
+            "module": "Client.Mirror.composeApp.main",
+            "destination": "Pixel 5 API 34",
+        },
+        
+        {
+            "type": "android-app",
+            "name": "Android-app configuration (1)",
+            "module": "Client.Mirror.composeApp.main",
+            "destination": "motorola edge 20 fusion",
+        },
+        
+    ]
+}
